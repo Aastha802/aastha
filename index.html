@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aastha Katwal — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="themeToggle" class="theme-btn">🌙</button>
+<button id="topBtn" class="top-button">↑</button>
+
+<header class="hero">
+    <div class="hero-content">
+        <img src="Profile.jpg" class="profile-img">
+        <h1>Hello, I'm <span>Aastha Katwal</span></h1>
+        <p>Web Developer | Creative Designer | Student</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+    <p>I am Aastha Katwal, a passionate learner who loves building modern and responsive websites.</p>
+</section>
+
+<section class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><div class="progress" data-width="90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><div class="progress" data-width="85%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar"><div class="progress" data-width="70%"></div></div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card" data-link="https://example.com/virtual-museum">
+            <img src="museum.webp">
+            <h3>Virtual Museum</h3>
+            <p>Interactive virtual museum website.</p>
+        </div>
+
+        <div class="project-card" data-link="https://example.com/weather">
+            <img src="weather.png">
+            <h3>Weather App</h3>
+            <p>Real-time weather application.</p>
+        </div>
+
+        <div class="project-card" data-link="https://example.com/movieapp">
+            <img src="movieapp.webp">
+            <h3>Movie App</h3>
+            <p>Movie browsing application.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="media">
+    <h2>Media Section</h2>
+
+    <video width="400" controls>
+        <source src="Video.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="beep.wav" type="audio/wav">
+    </audio>
+
+    <canvas id="myCanvas" width="300" height="150"></canvas>
+</section>
+
+<section class="slider">
+    <h2>Image Slider</h2>
+
+    <div class="slider-box">
+        <img id="slideImg" src="image1.jpeg">
+    </div>
+
+    <button onclick="prev()">Prev</button>
+    <button onclick="next()">Next</button>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm" class="contact-box">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+
+    <p id="formMsg"></p>
+</section>
+
+
+<footer>
+    <p>© 2025 Aastha Katwal — All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
